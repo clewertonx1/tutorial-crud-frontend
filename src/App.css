@@ -1,38 +1,82 @@
+button {
+  border: none;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background-color: #dae0f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.todos {
+  background-color: white;
+  width: 508px;
+  height: 383px;
+  overflow-y: scroll;
+}
+
+.todo {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo p {
+  min-width: 200px;
+  max-width: 200px;
+  text-align: start;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #64697b;
+}
+.checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+
+  border: 2px solid #64697b;
+  box-shadow: none;
+  margin: 10px;
+}
+.header {
+  background-color: #a879e6;
+  width: 508px;
+  height: 60px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  font-size: 0.8rem;
 }
-
-.App-link {
-  color: #61dafb;
+.newTaskButton {
+  border: none;
+  background-color: #a879e6;
+  width: 160px;
+  height: 50px;
+  border-radius: 24px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputName {
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
 }
